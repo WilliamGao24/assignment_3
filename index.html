@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class = title>
         <h1>Math Calculator</h1>
     </div>
 
-    <div class = heron's-formula>
+    <div class = herons-formula>
         <h2>Heron's Formula</h2>
         <form>
             <label for= "heron-A"> Side 1: </label>
@@ -22,9 +24,11 @@
             <label for ="heron-C">Side 3:</label>
             <input type="number" name = "heron-C" id="heron-C" required>
             <br>
+            <label> Area: </label>
+            <input type="text" name="heron-answer" id="heron-answer" disabled>
+            <br>
             <input type="submit" value="Calculate">
-            <label> Answer: </label>
-            <input type="text" name="heron-answer" id="heron-answer" readonly>
+
         </form>
     </div>
 
@@ -40,32 +44,48 @@
             <label for="side-C">Side b:</label>
             <input type="number" name="side-b" id="side-b" required>
             <br>
+            <label> Triangle Type: </label>
+            <input type="text" name="ambiguous-answer" id="ambiguous-answer" disabled>
+            <br>
             <input type="submit" value="Calculate">
-            <input type="text" name="ambiguous-answer" id="ambiguous-answer" readonly>
         </form>
     </div>
     
-    <div class = "newton's-method">
+    <div class = "newtons-method">
         <h2>Newton's Method</h2>
         <form>
-            <label for="newton-x0">Initial guess:</label>
-            <input type="number" name="newton-x0" id="newton-x0" required>
+            <label for="root-guess">Initial guess:</label>
+            <input type="number" name="root-guess" id="root-guess" required>
             <br>
-            <label for="newton-fx">f(x):</label>
-            <input type="text" name="newton-fx" id="newton-fx" required>
-            <br>
-            <label for="newton-fxprime">f'(x):</label>
-            <input type="text" name="newton-fxprime" id="newton-fxprime" required>
+            <label> Root Approximation: </label>
+            <input type="text" name="newton-answer" id="newton-answer" disabled>
             <br>
             <input type="submit" value="Calculate">
-            <label> Answer: </label>
-            <input type="text" name="newton-answer" id="newton-answer" readonly>
+        </form>
     </div>
 
     <div class = polynomial-function>
         <h2>Polynomial Function</h2>
-        
+        <form>
+        <label for="coefficients">Coefficients:</label>
+        <input type="number" name="coefficients" id="coefficients" required>
+        <br>
+        <label for="exponents">Exponents:</label>
+        <input type="number" name="exponents" id="exponents" required>
+        <br>
+        <label for="x-value">x value:</label>
+        <input type="number" name="x-value" id="x-value" required>
+        <br>
+        <label> Polynomial Function: </label>
+        <input type="text" name="polynomial-function" id="polynomial-function" disabled>
+        <br>
+        <label> Polynomial Evaluation:  </label>
+        <input type="text" name="polynomial-evaluation" id="polynomial-evaluation" disabled>
+        <br>
+        <input type="submit" value="Calculate">
+    </form>
     </div>
 
+    <script src="scripts.js"></script>
 </body>
 </html>
