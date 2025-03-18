@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Calculator</title>
+</head>
+<body>
+    <div class = title>
+        <h1>Math Calculator</h1>
+    </div>
+
+    <div class = heron's-formula>
+        <h2>Heron's Formula</h2>
+        <form>
+            <label for= "heron-A"> Side 1: </label>
+            <input type= "number" name = "heron-A" id="heron-A" required>
+            <br>
+            <label for = "heron-B">Side 2:</label>
+            <input type="number" name = "heron-B" id="heron-B" required>
+            <br>
+            <label for ="heron-C">Side 3:</label>
+            <input type="number" name = "heron-C" id="heron-C" required>
+            <br>
+            <input type="submit" value="Calculate">
+            <label> Answer: </label>
+            <input type="text" name="heron-answer" id="heron-answer" readonly>
+        </form>
+    </div>
+
+    <div class="ambiguous-case">
+        <h2>Ambiguous Case</h2>
+        <form>
+            <label for="angle-A">Angle A:</label>
+            <input type="number" name="angle-A" id="angle-A" required>
+            <br>
+            <label for="side-B">Side a:</label>
+            <input type="number" name="side-a" id="side-a" required>
+            <br>
+            <label for="side-C">Side b:</label>
+            <input type="number" name="side-b" id="side-b" required>
+            <br>
+            <input type="submit" value="Calculate">
+            <input type="text" name="ambiguous-answer" id="ambiguous-answer" readonly>
+        </form>
+    </div>
+    
+    <div class = "newton's-method">
+        <h2>Newton's Method</h2>
+        <form>
+            <label for="newton-x0">Initial guess:</label>
+            <input type="number" name="newton-x0" id="newton-x0" required>
+            <br>
+            <label for="newton-fx">f(x):</label>
+            <input type="text" name="newton-fx" id="newton-fx" required>
+            <br>
+            <label for="newton-fxprime">f'(x):</label>
+            <input type="text" name="newton-fxprime" id="newton-fxprime" required>
+            <br>
+            <input type="submit" value="Calculate">
+            <label> Answer: </label>
+            <input type="text" name="newton-answer" id="newton-answer" readonly>
+    </div>
+
+    <div class = polynomial-function>
+        <h2>Polynomial Function</h2>
+        
+    </div>
+
+</body>
+</html>
