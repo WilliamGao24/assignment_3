@@ -13,77 +13,77 @@
         <h1>Math Calculator</h1>
     </div>
 
-    <div class="calculator-form">
+    <div class="herons-formula">
         <h2>Heron's Formula</h2>
-        <form id = "herons-formula">
-            <label for= "heron-a"> Side a: </label>
-            <input type= "number" name = "heron-a" id="heron-a" step = 0.001 required>
+        <form id="herons">
+            <label for="heron-a">Side a:</label>
+            <input type="number" name="heron-a" id="heron-a" step="0.001" required>
             <br>
-            <label for = "heron-b">Side b:</label>
-            <input type="number" name = "heron-b" id="heron-b" step = 0.001 required>
+            <label for="heron-b">Side b:</label>
+            <input type="number" name="heron-b" id="heron-b" step="0.001" required>
             <br>
-            <label for ="heron-c">Side c:</label>
-            <input type="number" name = "heron-c" id="heron-c" step = 0.001 required>
+            <label for="heron-c">Side c:</label>
+            <input type="number" name="heron-c" id="heron-c" step="0.001" required>
             <br>
-            <label> Area: </label>
-            <input type="text" name="heron-answer" id="heron-answer" step = 0.001 disabled>
+            <label>Area:</label>
+            <input type="text" name="heron-answer" id="heron-answer" disabled>
             <br>
             <input type="submit" value="Calculate">
         </form>
     </div>
 
-    <div class="calculator-form">
+    <div class="ambiguous-case">
         <h2>Ambiguous Case</h2>
-        <form>
+        <form id="ambiguous">
             <label for="angle-A">Angle A:</label>
-            <input type="number" name="angle-A" id="angle-A" step = 0.001 required>
+            <input type="number" name="angle-A" id="angle-A" step="0.001" required>
             <br>
-            <label for="side-B">Side a:</label>
-            <input type="number" name="side-a" id="side-a" step = 0.001 required>
+            <label for="side-a">Side a:</label>
+            <input type="number" name="side-a" id="side-a" step="0.001" required>
             <br>
-            <label for="side-C">Side b:</label>
-            <input type="number" name="side-b" id="side-b" step = 0.001 required>
+            <label for="side-b">Side b:</label>
+            <input type="number" name="side-b" id="side-b" step="0.001" required>
             <br>
-            <label> Triangle Type: </label>
-            <input type="text" name="ambiguous-answer" id="ambiguous-answer" step = 0.001 disabled>
+            <label>Triangle Type:</label>
+            <input type="text" name="ambiguous-answer" id="ambiguous-answer" disabled>
             <br>
             <input type="submit" value="Calculate">
         </form>
     </div>
-    
-    <div class = "calculator-form">
+
+    <div class="newtons-method">
         <h2>Newton's Method</h2>
-        <form>
+        <form id="newtons">
             <label for="root-guess">Initial guess:</label>
-            <input type="number" name="root-guess" id="root-guess" step = 0.001 required>
+            <input type="number" name="root-guess" id="root-guess" step="0.001" required>
             <br>
-            <label> Root Approximation: </label>
+            <label>Root Approximation:</label>
             <input type="text" name="newton-answer" id="newton-answer" disabled>
             <br>
             <input type="submit" value="Calculate">
         </form>
     </div>
 
-    <div class = "calculator-form">
+    <div class="polynomial-fcn">
         <h2>Polynomial Function</h2>
-        <form>
-        <label for="coefficients">Coefficients:</label>
-        <input type="number" name="coefficients" id="coefficients" step = 0.001 required>
-        <br>
-        <label for="exponents">Exponents:</label>
-        <input type="number" name="exponents" id="exponents" step = 0.001 required>
-        <br>
-        <label for="x-value">x value:</label>
-        <input type="number" name="x-value" id="x-value" step = 0.001 required>
-        <br>
-        <label> Polynomial Function: </label>
-        <input type="text" name="polynomial-function" id="polynomial-function" step = 0.001 disabled>
-        <br>
-        <label> Polynomial Evaluation:  </label>
-        <input type="text" name="polynomial-evaluation" id="polynomial-evaluation" step = 0.001 disabled>
-        <br>
-        <input type="submit" value="Calculate">
-    </form>
+        <form id="polynomial">
+            <label for="coefficients">Coefficients:</label>
+            <input type="text" name="coefficients" id="coefficients" step="0.001" required>
+            <br>
+            <label for="exponents">Exponents:</label>
+            <input type="text" name="exponents" id="exponents" step="0.001" required>
+            <br>
+            <label for="x-value">x value:</label>
+            <input type="number" name="x-value" id="x-value" step="0.001" required>
+            <br>
+            <label>Polynomial Function:</label>
+            <input type="text" name="polynomial-function" id="polynomial-function" disabled>
+            <br>
+            <label>Polynomial Evaluation:</label>
+            <input type="text" name="polynomial-evaluation" id="polynomial-evaluation" disabled>
+            <br>
+            <input type="submit" value="Calculate">
+        </form>
     </div>
 
     <script src="script.js"></script>
